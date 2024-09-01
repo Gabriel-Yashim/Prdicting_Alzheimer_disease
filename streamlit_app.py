@@ -151,9 +151,9 @@ def main():
 
         # Display the result
         if prediction[0] == 1:
-            st.write(f"RESULT: This patient has Alzheimer's")
+            st.write(f"RESULT: This patient has Alzheimer")
         else:
-            st.write(f"RESULT: This patient does not have Alzheimer's")
+            st.write(f"RESULT: This patient does not have Alzheimer")
 
 if __name__ == '__main__':
     main()
