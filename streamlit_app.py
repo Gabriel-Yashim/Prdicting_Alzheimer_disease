@@ -44,7 +44,7 @@ scaler_minmax.fit(td[columns_to_scale])
 def preprocess_input(data):
     # Convert categorical inputs to numerical values
     data['Gender'] = 1 if data['Gender'] == 'Male' else 0
-    data['Ethnicity'] = 1 if data['Ethnicity'] == 'Ethnic Group 1' else 0
+    data['Ethnicity'] = 0 if data['Ethnicity'] == 'Ethnic Group 1' else 1 if data['Ethnicity'] == 'Ethnic group 2' else 2 if data['Ethnicity'] == 'Ethnic group 3' else 3 if data['Ethnicity'] == 'Ethnic group 4'
     data['Smoking'] = 1 if data['Smoking'] == 'Yes' else 0
     data['FamilyHistoryAlzheimers'] = 1 if data['FamilyHistoryAlzheimers'] == 'Yes' else 0
     data['CardiovascularDisease'] = 1 if data['CardiovascularDisease'] == 'Yes' else 0
