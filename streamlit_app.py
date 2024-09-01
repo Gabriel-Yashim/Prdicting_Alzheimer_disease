@@ -73,7 +73,7 @@ def main():
     with st.form(key='input_form'):
         age = st.number_input("Age", min_value=0, max_value=120, value=77)
         gender = st.selectbox("Gender", ["Male", "Female"])
-        ethnicity = st.selectbox("Ethnicity", ["Ethnic Group 1", "Ethnic Group 2"])
+        ethnicity = st.selectbox("Ethnicity", ["Ethnic Group 1", "Ethnic Group 2", "Ethnic Group 3", "Ethnic Group 4"])
         education_level = st.selectbox("Education Level", ["Level 0", "Level 1", "Level 2"])
         bmi = st.number_input("BMI", min_value=0.0, max_value=100.0, value=35.55)
         smoking = st.selectbox("Smoking", ["Yes", "No"])
